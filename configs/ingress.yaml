@@ -15,6 +15,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: namespaxe-service
+                name: hello-app-service
                 port:
                   number: 80
