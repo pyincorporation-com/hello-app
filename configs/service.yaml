@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: namespaxe-service
+  namespace: namespaxe
+spec:
+  selector:
+    app: namespaxe-hello-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
