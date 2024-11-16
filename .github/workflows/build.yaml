@@ -27,7 +27,7 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          tags: namespaxe/hello-app:1.0
+          tags: namespaxe/hello-app:1.1
           push: true
 
       - name: Logout from Docker Hub
