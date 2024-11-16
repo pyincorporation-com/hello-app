@@ -11,7 +11,9 @@ This guide walks you through deploying the "Hello App" on the Namespaxe platform
 ### 1. **Deploy the Application (Deployment YAML)**
    The first step is to deploy the application using the **deployment.yaml** file. This file defines how the Hello App will be run on Kubernetes, including the container image, replica count, and resource requests.
 
-   - **Action**: Run the following command to apply the deployment configuration:
+   - **Action**: On web interface, Copy the file content and paste in text area, then click upload button.
+
+   - **Action**: If your using local terminal with kubectl installed, Run the following command to apply the deployment configuration:
      ```bash
      kubectl apply -f configs/deployment.yaml
      ```
@@ -26,7 +28,9 @@ This guide walks you through deploying the "Hello App" on the Namespaxe platform
 ### 2. **Create the Service (Service YAML)**
    Once the deployment is successful, you need to expose the Hello App using a service. The **service.yaml** file defines how the app will be accessed internally or externally.
 
-   - **Action**: Apply the service configuration by running:
+   - **Action**: On web interface, Copy the file content and paste in text area, then click upload button.
+
+   - **Action**: If your using local terminal with kubectl installed, Apply the service configuration by running:
      ```bash
      kubectl apply -f configs/service.yaml
      ```
@@ -41,7 +45,9 @@ This guide walks you through deploying the "Hello App" on the Namespaxe platform
 ### 3. **Create the Ingress (Ingress YAML)**
    The final step is to set up an ingress to route external traffic to the Hello App. The **ingress.yaml** file defines the rules for exposing your service to the outside world, typically via a URL.
 
-   - **Action**: Apply the ingress configuration:
+   - **Action**: On web interface, Copy the file content and paste in text area, then click upload button.
+
+   - **Action**: If your using local terminal with kubectl installed, Apply the ingress configuration:
      ```bash
      kubectl apply -f configs/ingress.yaml
      ```
