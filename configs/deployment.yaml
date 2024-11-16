@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: namespaxe-hello-container
-          image: namespaxe/hello-app:1.0
+          image: namespaxe/hello-app:1.1
           resources:
             requests:
               memory: "40Mi"
