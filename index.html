@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="image-container">
+                <img src="https://pyincorporation.com/static/pycloud/images/relax.png" alt="Welcome Image"
+                    class="header-image">
+            </div>
+            <h1>Welcome to the Hello App</h1>
+            <p>Your gateway to simple design and functionality</p>
+            <button onclick="showModal()">Click Me</button>
+        </main>
+        <footer>
+            <p>Made with ❤️ by <a href="https://pyincorporation.com">PyIncorporation</a></p>
+        </footer>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Hello, World!</h2>
+            <p>Welcome to the Hello App. Enjoy exploring!</p>
+            <button class="close-button" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
