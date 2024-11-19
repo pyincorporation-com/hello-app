@@ -1,25 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: namespaxe-hello-app
-  namespace: namespaxe
+  name: myapp
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: namespaxe-hello-app
+      app: myapp
   template:
     metadata:
       labels:
-        app: namespaxe-hello-app
+        app: myapp
     spec:
       containers:
-        - name: namespaxe-hello-container
-          image: namespaxe/hello-app:1.1
+        - name: myapp-container
+          image: namespaxe/hello-app:1.0
           resources:
             requests:
-              memory: "40Mi"
-              cpu: "20m"
+              memory: "20Mi"
+              cpu: "10m"
             limits:
-              memory: "50Mi"
-              cpu: "30m"
+              memory: "20Mi"
+              cpu: "20m"
